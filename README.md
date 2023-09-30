@@ -31,4 +31,6 @@ Após total finalização da instalação, eu super recomendo você dar uma olha
 
 ## Imagens
 ![Informações](https://i.imgur.com/7BMutwx.png)
-![Aceleração de Hardware](https://i.imgur.com/ReDUduk.png)
+![Aceleração de hardware](https://i.imgur.com/ReDUduk.png)
+![CPU Benchmark](https://i.imgur.com/WqQZ7ts.png)
+![GPU OpenCL Benchmark](https://i.imgur.com/mjdKi66.png)
