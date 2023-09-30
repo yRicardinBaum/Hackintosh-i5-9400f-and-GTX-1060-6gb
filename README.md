@@ -14,7 +14,7 @@
 
 **AVISO IMPORTANTE:**
 
-**Algumas GPUs acima da série Kepler não possui suporte da própria NVIDIA**, ou como são chamados, WebDrivers. Por isso foi feito uma 'gambiarra' que vem sendo muito usada por pessoas que possuem placas de video não suportadas, e por isso podem apresentar problemas como glitches e etc, porém com a minha vivência atual com o sistema, esses poucos glitches não me afetaram em absolutamente nada. Porém, se você planeja utilizar a acelaração de hardware ou a API Metal, usar essa EFI não vai suprir as suas necessidades, **já que a GPU, por não ser suportada nativamente, não possui esse tipo de tecnologia.** Entretanto se você deseja usar para uso básico, como programação e estudos, usar essa EFI pode é uma boa opção.
+**Algumas GPUs acima da série Kepler não possui suporte da própria NVIDIA**, ou como são chamados, WebDrivers. Por isso foi feito uma 'gambiarra' que vem sendo muito usada por pessoas que possuem placas de video não suportadas, e por isso podem apresentar problemas como glitches e etc, porém com a minha vivência atual com o sistema, esses poucos glitches não me afetaram em absolutamente nada. Porém, se você planeja utilizar a acelaração de hardware ou a API Metal, usar essa EFI não vai suprir as suas necessidades, **já que a GPU, por não ser suportada nativamente, não possui esse tipo de tecnologia.** Entretanto se você deseja usar para uso básico, como programação e estudos, usar essa EFI pode ser uma boa opção.
 
 
 
