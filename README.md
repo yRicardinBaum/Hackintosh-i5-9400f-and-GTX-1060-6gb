@@ -1,4 +1,4 @@
-# Hackintosh MacOS Ventura 13.5 - Intel Coffe Lake + GPU Nvidia 
+# Hackintosh MacOS Ventura 13.5 - OpenCore 0.9.5 - Intel Coffe Lake + GPU Nvidia
 
 ### Especificações:
 	* Gigabyte B360M DS3H
