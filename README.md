@@ -1,6 +1,6 @@
 # Hackintosh MacOS Ventura 13.5 - Intel Coffe Lake + GPU Nvidia 
 
-### Main Specs:
+### Especificações:
 	* Gigabyte B360M DS3H
 	* Intel core i5-9400f Coffee-Lake
 	* GALAX GTX 1060 6GB (GDDR5X / GP104)
