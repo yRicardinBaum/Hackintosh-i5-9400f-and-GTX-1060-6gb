@@ -1,40 +1,34 @@
-# Hackintosh High Sierra 10.13.6 Coffee-Lake 
+# Hackintosh MacOS Ventura 13.5 - Intel Coffe Lake + GPU Nvidia 
 
 ### Main Specs:
-	* Asus z370-p Motherboard
-	* Intel core i5-8400 Coffee-Lake
-	* EVGA GTX 1060 3GB
-	* 8GB DDR4 2400mhz
+	* Gigabyte B360M DS3H
+	* Intel core i5-9400f Coffee-Lake
+	* GALAX GTX 1060 6GB (GDDR5X / GP104)
+	* 16GB DDR4 2666mhz
+	* Realtek 8118 Gaming 
 
-**Note:**
-1. If you have my same motherboard, cpu _(or similar cpu)_ and GPU you can directly copy and paste my `efi ssd` folder in your efi partition.
-2. If you have my same motherboard and cpu _(or similar cpu)_, you can copy my `efi ssd` folder, but you should:
-	* remove `WhateverGreen.kext` from *EFI/CLOVER/kexts/other/*
-	* change config.plist :
-		- untick `System parameters->NvidiaWeb`
-		- use another ig-platform-id and enable intel gpu ( google is your friend )
+**Observação:**
+1. Se você usar o mesmo processador que o meu _(ou parecido)_ e GPU, você pode apenas copiar e colar a pasta `EFI` dentro da sua partição.
+2. Para ativação da placa de video foi usado o aplicativo [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher).
+3. Foi usado o aplicativo [SSDTTime](https://github.com/corpnewt/SSDTTime) para criação das ACPIs necessárias para o bom uso do MacOS.
 
-In **both** cases you should regenerate `SSDT.aml` ( you can follow [this](https://www.tonymacx86.com/threads/guide-generate-ssdt-for-coffee-lake-cpu.238311/) guide )
+**AVISO IMPORTANTE:**
 
-If you're **NOT** in one of those two cases, you should **NOT** use my efi folder.
-
-**Nvidia cards are no longer supported** on Mac OS 10.14+ , so this efi folder (as it is) will not work on newer versions. 
-
-**Pro tip:** you can use Intel integrated gpu ( Intel® UHD Graphics 630 ) and it will work just fine!
+**Algumas GPUs acima da série Kepler não possui suporte da própria NVIDIA**, ou como são chamados, WebDrivers. Por isso foi feito uma 'gambiarra' que vem sendo muito usada por pessoas que possuem placas de video não suportadas, e por isso podem apresentar problemas como glitches e etc, porém com a minha vivência atual com o sistema, esses poucos glitches não me afetaram em absolutamente nada. Porém, se você planeja utilizar a acelaração de hardware ou a API Metal, usar essa EFI não vai suprir as suas necessidades, **já que a GPU, por não ser suportada nativamente, não possui esse tipo de tecnologia.** Entretanto se você deseja usar para uso básico, como programação e estudos, usar essa EFI pode é uma boa opção.
 
 
 
-## Enable Nvidia Card
-Checkout [this](https://www.tonymacx86.com/threads/fix-for-failure-nvidia-web-driver-on-high-sierra-black-screen-panics.234390/) guide from tonymacx86.com , it's easy to follow and it works like a charm :+1:
+## Ativar a GPU
+Após terminar a instalação do MacOS e estar bootando sem o pendrive, você perceberá uma lentidão extrema nas animações e na fluidez do sistema, isso porque você ainda não ativou a GPU, para fazer isso instale o OpenCore Legacy Patcher [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher), e então assista ao [tutorial de ativação](https://www.youtube.com/watch?v=miWgnT2KOjY)
 
-## Extra tip
-Open Clover Configurator, mount efi partition, open config.plist and change "Hide volumes" based on your drives
-( `GUI->Hide Volume` )
+## Dicas extras 
+Após total finalização da instalação, eu super recomendo você dar uma olhada nesse repositório para terminar de configurar o seu macos acessando [esse link](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide).
 
-## Final results
-**What works?**: 
-> everything except for HDMI Audio from Nvidia GPU (it can be fixed using *VooDooHDA.kext* but it's not good to have 2 "drivers" that do the same thing. (If you can find a fix you can suggest it to me i will add it to the repo with credits :sunglasses:
+## Resultado final
+**O que realmente funciona?**: 
+> Tudo, apenas com as limitações da GPU ditas nos tópicos anteriores.
 
 
-## Screenshot
-![Screenshot](https://i.imgur.com/2oazaql.jpg)
+## Imagens
+![Informações](https://i.imgur.com/7BMutwx.png)
+![Aceleração de Hardware](https://i.imgur.com/ReDUduk.png)
